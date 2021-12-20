@@ -14,7 +14,9 @@
     <mvc:annotation-driven/>
 
     <!-- Base package -->
-    <context:component-scan base-package="Controller"></context:component-scan>
+    <context:component-scan base-package="controller"></context:component-scan>
+    <context:component-scan base-package="dao"></context:component-scan>
+    <context:component-scan base-package="service"></context:component-scan>
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/views/"></property>
